@@ -15,9 +15,7 @@ const Hero = () => {
     window.open('https://wa.me/966536601777', '_blank');
   };
 
-  const handlePortfolioClick = () => {
-    document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' });
-  };
+  // Removed portfolio CTA for a simpler hero
 
   const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
 
@@ -42,27 +40,21 @@ const Hero = () => {
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}>
           {/* Main Headline */}
-          <h1 className={`font-playfair text-4xl md:text-6xl lg:text-7xl font-bold text-ivory mb-6 leading-tight ${
-            isRTL ? 'text-right' : 'text-left'
-          }`}>
+          <h1 className={
+            'font-playfair text-4xl md:text-6xl lg:text-7xl font-extrabold text-ivory mb-4 leading-tight text-center'
+          }>
             <span className="inline-block animate-fade-in-up">
-              {t('hero.title')}
+              {t('hero.title.short')}
             </span>
           </h1>
 
-          {/* Subtitle */}
-          <p className={`text-xl md:text-2xl text-ivory/90 mb-8 max-w-3xl mx-auto leading-relaxed ${
-            isRTL ? 'text-right' : 'text-left'
-          }`}>
-            {t('hero.subtitle')}
+          {/* Subtitle (short) */}
+          <p className={
+            'text-lg md:text-xl text-ivory mb-10 max-w-2xl mx-auto leading-relaxed text-center font-bold'
+          }>
+            {t('hero.subtitle.short')}
           </p>
-
-          {/* Description */}
-          <p className={`text-lg md:text-xl text-ivory/80 mb-12 max-w-2xl mx-auto leading-relaxed ${
-            isRTL ? 'text-right' : 'text-left'
-          }`}>
-            {t('hero.description')}
-          </p>
+          
 
           {/* CTAs */}
           <div className={`flex flex-col sm:flex-row gap-6 justify-center items-center ${
@@ -75,23 +67,10 @@ const Hero = () => {
               <span>{t('hero.cta.primary')}</span>
               <ArrowIcon size={20} />
             </button>
-
-            <button
-              onClick={handlePortfolioClick}
-              className="btn-secondary flex items-center space-x-3 bg-white/10 border-white/30 text-white hover:bg-white hover:text-cocoa"
-            >
-              <span>{t('hero.cta.secondary')}</span>
-              <ArrowIcon size={20} />
-            </button>
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
-          </div>
-        </div>
+        {/* Scroll Indicator removed for a cleaner hero */}
       </div>
     </section>
   );

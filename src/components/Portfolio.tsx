@@ -16,44 +16,44 @@ const Portfolio = () => {
   const portfolioItems = [
     {
       id: 1,
-      title: 'Modern Villa Interior',
+      title: isRTL ? 'تصميم فيلا حديثة' : 'Modern Villa Interior',
       category: 'residential',
-      location: 'Riyadh',
+      location: isRTL ? 'الرياض' : 'Riyadh',
       image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop',
     },
     {
       id: 2,
-      title: 'Luxury Restaurant',
+      title: isRTL ? 'مطعم فاخر' : 'Luxury Restaurant',
       category: 'hospitality',
-      location: 'Jeddah',
+      location: isRTL ? 'جدة' : 'Jeddah',
       image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop',
     },
     {
       id: 3,
-      title: 'Corporate Office',
+      title: isRTL ? 'مكتب شركات' : 'Corporate Office',
       category: 'commercial',
-      location: 'Dammam',
+      location: isRTL ? 'الدمام' : 'Dammam',
       image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop',
     },
     {
       id: 4,
-      title: 'Boutique Hotel Suite',
+      title: isRTL ? 'جناح فندقي بوتيك' : 'Boutique Hotel Suite',
       category: 'hospitality',
-      location: 'AlUla',
+      location: isRTL ? 'العلا' : 'AlUla',
       image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
     },
     {
       id: 5,
-      title: 'Contemporary Apartment',
+      title: isRTL ? 'شقة معاصرة' : 'Contemporary Apartment',
       category: 'residential',
-      location: 'Riyadh',
+      location: isRTL ? 'الرياض' : 'Riyadh',
       image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop',
     },
     {
       id: 6,
-      title: 'Retail Showroom',
+      title: isRTL ? 'صالة عرض تجزئة' : 'Retail Showroom',
       category: 'commercial',
-      location: 'Jeddah',
+      location: isRTL ? 'جدة' : 'Jeddah',
       image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop',
     },
   ];
@@ -114,7 +114,7 @@ const Portfolio = () => {
                     {item.title}
                   </h3>
                   <p className="text-sm opacity-90 mb-1">
-                    {item.category.charAt(0).toUpperCase() + item.category.slice(1)}
+                    {t(`portfolio.filter.${item.category}`)}
                   </p>
                   <p className="text-sm opacity-75">
                     {item.location}

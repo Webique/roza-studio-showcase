@@ -94,7 +94,7 @@ const Testimonials = () => {
               <img
                 src={currentTestimonial.avatar}
                 alt={isRTL ? currentTestimonial.name : currentTestimonial.nameEn}
-                className="w-16 h-16 rounded-full object-cover mr-4"
+                className={`w-16 h-16 rounded-full object-cover ${isRTL ? 'ml-4' : 'mr-4'}`}
               />
               <div className={isRTL ? 'text-right' : 'text-left'}>
                 <h4 className="font-playfair text-lg font-semibold text-cocoa">

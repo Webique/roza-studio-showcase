@@ -9,6 +9,13 @@ interface LanguageContextType {
 
 const translations = {
   ar: {
+    // Brand & Language
+    'brand.name': 'روزا ستوديو',
+    'brand.initial': 'ر',
+    'lang.ar': 'العربية',
+    'lang.en': 'English',
+    'lang.short.ar': 'ع',
+    'lang.short.en': 'EN',
     // Navigation
     'nav.home': 'الرئيسية',
     'nav.portfolio': 'أعمالنا',
@@ -22,6 +29,8 @@ const translations = {
     'hero.title': 'استوديو روزا للتصميم الداخلي — حيث تلتقي الفخامة بروح الإبداع.',
     'hero.subtitle': 'نبتكر مساحات تمزج الفخامة بالحيوية بأسلوب عصري يعكس ذوقك ويروي قصتك.',
     'hero.description': 'من الفكرة إلى التنفيذ، نصمّم تفاصيل أنيقة وألوانًا نابضة، لنخلق بيئات راقية ومريحة ببصمة فنية لا تُنسى.',
+    'hero.title.short': 'تصاميم داخلية راقية',
+    'hero.subtitle.short': 'بصمة فنية تعكس ذوقك',
     'hero.cta.primary': 'تواصل عبر واتساب',
     'hero.cta.secondary': 'شاهد أعمالنا',
     
@@ -58,6 +67,7 @@ const translations = {
     'about.title': 'عن استوديو روزا',
     'about.description': 'نؤمن أن كل مساحة تحكي قصة. في استوديو روزا، نحن متخصصون في إنشاء بيئات داخلية فاخرة تمزج بين الجمال الكلاسيكي والراحة العصرية. فلسفتنا تقوم على أن التصميم الجيد يجب أن يعكس شخصية ساكنيه ويخلق تجربة حسية لا تُنسى.',
     'about.quote': 'نؤمن أن كل مساحة تحكي قصة.',
+    'about.image.alt': 'تصميم استوديو روزا',
     
     // Testimonials
     'testimonials.title': 'آراء عملائنا',
@@ -67,15 +77,28 @@ const translations = {
     'contact.title': 'ابدأ رحلة التصميم معنا',
     'contact.subtitle': 'دعنا نحول مساحتك إلى تحفة فنية تعكس ذوقك الراقي',
     'contact.cta': 'تواصل معنا عبر واتساب',
+    'contact.info.title': 'معلومات التواصل',
+    'contact.whatsapp.description': 'تواصل معنا مباشرة على واتساب للحصول على استشارة فورية ومجانية',
+    'contact.form.quickMessageTitle': 'أرسل رسالة سريعة',
     'contact.form.name': 'الاسم',
     'contact.form.phone': 'رقم الهاتف',
     'contact.form.message': 'رسالتك',
     'contact.form.submit': 'إرسال',
     'contact.form.continue': 'متابعة المحادثة على واتساب',
+    'contact.toast.errorTitle': 'خطأ',
+    'contact.toast.errorFill': 'يرجى ملء جميع الحقول',
+    'contact.toast.successTitle': 'تم الإرسال بنجاح',
+    'contact.toast.successDesc': 'سيتم توجيهك إلى واتساب للمتابعة',
+    'contact.whatsapp.hello': 'مرحباً، اسمي',
+    'contact.whatsapp.phone': 'رقم الهاتف:',
     
     // Footer
     'footer.tagline': 'حيث تلتقي الأناقة بالإبداع',
     'footer.rights': 'جميع الحقوق محفوظة',
+    'footer.quickLinks': 'روابط سريعة',
+    'footer.getInTouch': 'تواصل معنا',
+    'footer.description': 'نحن متخصصون في إنشاء بيئات داخلية فاخرة تمزج بين الجمال الكلاسيكي والراحة العصرية.',
+    'footer.madeWithLove': 'صُنع بحب في المملكة العربية السعودية',
     
     // Portfolio
     'portfolio.title': 'معرض أعمالنا',
@@ -84,8 +107,20 @@ const translations = {
     'portfolio.filter.residential': 'سكني',
     'portfolio.filter.commercial': 'تجاري',
     'portfolio.filter.hospitality': 'ضيافة',
+
+    // NotFound
+    'notfound.title': '٤٠٤',
+    'notfound.message': 'عذراً! الصفحة غير موجودة',
+    'notfound.link': 'العودة للرئيسية',
   },
   en: {
+    // Brand & Language
+    'brand.name': 'Roza Studio',
+    'brand.initial': 'R',
+    'lang.ar': 'Arabic',
+    'lang.en': 'English',
+    'lang.short.ar': 'ع',
+    'lang.short.en': 'EN',
     // Navigation
     'nav.home': 'Home',
     'nav.portfolio': 'Portfolio',
@@ -99,6 +134,8 @@ const translations = {
     'hero.title': 'Roza Interior Studio — Designing luxurious spaces with a creative soul.',
     'hero.subtitle': 'We craft modern, vibrant interiors that reflect your taste and tell your story.',
     'hero.description': 'From concept to completion, we design elegant details and lively palettes to create refined, comfortable environments with an unforgettable artistic signature.',
+    'hero.title.short': 'Elegant Interior Design',
+    'hero.subtitle.short': 'An artistic touch that reflects your taste',
     'hero.cta.primary': 'Chat on WhatsApp',
     'hero.cta.secondary': 'View Portfolio',
     
@@ -135,6 +172,7 @@ const translations = {
     'about.title': 'About Roza Studio',
     'about.description': 'We believe every space tells a story. At Roza Studio, we specialize in creating luxurious interior environments that blend classical beauty with modern comfort. Our philosophy is that good design should reflect the personality of its inhabitants and create an unforgettable sensory experience.',
     'about.quote': 'We believe every space tells a story.',
+    'about.image.alt': 'Roza Studio Design',
     
     // Testimonials
     'testimonials.title': 'Client Testimonials',
@@ -144,15 +182,28 @@ const translations = {
     'contact.title': 'Start Your Design Journey With Us',
     'contact.subtitle': 'Let us transform your space into an artistic masterpiece that reflects your refined taste',
     'contact.cta': 'Contact us via WhatsApp',
+    'contact.info.title': 'Contact Information',
+    'contact.whatsapp.description': 'Contact us directly on WhatsApp for instant and free consultation',
+    'contact.form.quickMessageTitle': 'Send a Quick Message',
     'contact.form.name': 'Name',
     'contact.form.phone': 'Phone Number',
     'contact.form.message': 'Your Message',
     'contact.form.submit': 'Send',
     'contact.form.continue': 'Continue conversation on WhatsApp',
+    'contact.toast.errorTitle': 'Error',
+    'contact.toast.errorFill': 'Please fill in all fields',
+    'contact.toast.successTitle': 'Successfully Sent',
+    'contact.toast.successDesc': 'You will be redirected to WhatsApp to continue',
+    'contact.whatsapp.hello': 'Hello, my name is',
+    'contact.whatsapp.phone': 'Phone:',
     
     // Footer
     'footer.tagline': 'Where elegance meets creativity',
     'footer.rights': 'All rights reserved',
+    'footer.quickLinks': 'Quick Links',
+    'footer.getInTouch': 'Get in Touch',
+    'footer.description': 'We specialize in creating luxurious interior environments that blend classical beauty with modern comfort.',
+    'footer.madeWithLove': 'Made with love in Saudi Arabia',
     
     // Portfolio
     'portfolio.title': 'Our Portfolio',
@@ -161,6 +212,11 @@ const translations = {
     'portfolio.filter.residential': 'Residential',
     'portfolio.filter.commercial': 'Commercial',
     'portfolio.filter.hospitality': 'Hospitality',
+
+    // NotFound
+    'notfound.title': '404',
+    'notfound.message': 'Oops! Page not found',
+    'notfound.link': 'Return to Home',
   }
 };
 

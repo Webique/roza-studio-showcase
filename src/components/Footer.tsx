@@ -31,7 +31,7 @@ const Footer = () => {
             <div className="mb-6">
               <img 
                 src={rozaLogo} 
-                alt="Roza Studio" 
+                alt={t('brand.name')} 
                 className="h-16 w-auto object-contain"
               />
             </div>
@@ -41,17 +41,14 @@ const Footer = () => {
             </p>
             
             <p className="text-ivory/70 leading-relaxed max-w-md">
-              {isRTL 
-                ? 'نحن متخصصون في إنشاء بيئات داخلية فاخرة تمزج بين الجمال الكلاسيكي والراحة العصرية.'
-                : 'We specialize in creating luxurious interior environments that blend classical beauty with modern comfort.'
-              }
+              {t('footer.description')}
             </p>
           </div>
 
           {/* Quick Links */}
           <div className={isRTL ? 'text-right' : 'text-left'}>
             <h4 className="font-playfair text-lg font-semibold mb-6 text-sand">
-              {isRTL ? 'روابط سريعة' : 'Quick Links'}
+              {t('footer.quickLinks')}
             </h4>
             
             <nav className="space-y-3">
@@ -70,7 +67,7 @@ const Footer = () => {
           {/* Contact & Social */}
           <div className={isRTL ? 'text-right' : 'text-left'}>
             <h4 className="font-playfair text-lg font-semibold mb-6 text-sand">
-              {isRTL ? 'تواصل معنا' : 'Get in Touch'}
+              {t('footer.getInTouch')}
             </h4>
             
             <div className="space-y-4 mb-6">
@@ -100,7 +97,7 @@ const Footer = () => {
                 className="flex items-center space-x-2 text-ivory/80 hover:text-sand transition-colors duration-300"
               >
                 <Globe size={16} />
-                <span className="text-sm">{language === 'ar' ? 'English' : 'العربية'}</span>
+                <span className="text-sm">{language === 'ar' ? t('lang.en') : t('lang.ar')}</span>
               </button>
             </div>
           </div>
@@ -115,7 +112,7 @@ const Footer = () => {
           </p>
           
           <p className="text-ivory/60 text-sm mt-4 md:mt-0">
-            {isRTL ? 'صُنع بحب في المملكة العربية السعودية' : 'Made with love in Saudi Arabia'}
+            {t('footer.madeWithLove')}
           </p>
         </div>
       </div>

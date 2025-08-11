@@ -43,7 +43,7 @@ const About = () => {
               <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-elegant">
                 <img
                   src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=800&h=1000&fit=crop"
-                  alt="Roza Studio Design"
+                  alt={t('about.image.alt')}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -52,10 +52,10 @@ const About = () => {
               <div className="absolute -bottom-8 -right-8 bg-white rounded-xl p-6 shadow-elegant max-w-xs">
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-sage to-cocoa rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-xl">R</span>
+                    <span className="text-white font-bold text-xl">{t('brand.initial')}</span>
                   </div>
                   <div>
-                    <h4 className="font-playfair text-lg font-semibold text-cocoa">Roza Studio</h4>
+                    <h4 className="font-playfair text-lg font-semibold text-cocoa">{t('brand.name')}</h4>
                     <p className="text-sage text-sm">{t('footer.tagline')}</p>
                   </div>
                 </div>

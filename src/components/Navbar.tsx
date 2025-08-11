@@ -41,7 +41,7 @@ const Navbar = () => {
           <div className={`flex items-center ${isRTL ? 'order-3' : 'order-1'}`}>
             <img 
               src={rozaLogo} 
-              alt="Roza Studio" 
+              alt={t('brand.name')} 
               className="h-12 w-auto object-contain"
             />
           </div>
@@ -63,10 +63,12 @@ const Navbar = () => {
           <div className={`flex items-center space-x-4 ${isRTL ? 'space-x-reverse order-2' : 'order-3'}`}>
             <button
               onClick={toggleLanguage}
-              className="flex items-center space-x-2 text-cocoa hover:text-sage transition-colors duration-300"
+              className={`flex items-center ${isRTL ? 'space-x-reverse' : ''} space-x-2 text-cocoa hover:text-sage transition-colors duration-300`}
+              aria-label={language === 'ar' ? t('lang.en') : t('lang.ar')}
+              title={language === 'ar' ? t('lang.en') : t('lang.ar')}
             >
               <Globe size={20} />
-              <span className="font-medium">{language === 'ar' ? 'EN' : 'ع'}</span>
+              <span className="font-medium">{language === 'ar' ? t('lang.short.en') : t('lang.short.ar')}</span>
             </button>
 
             {/* Mobile Menu Button */}
