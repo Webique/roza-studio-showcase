@@ -27,7 +27,6 @@ const Navbar = () => {
     { key: 'nav.services', href: '#services' },
     { key: 'nav.process', href: '#process' },
     { key: 'nav.about', href: '#about' },
-    { key: 'nav.testimonials', href: '#testimonials' },
     { key: 'nav.contact', href: '#contact' },
   ];
 

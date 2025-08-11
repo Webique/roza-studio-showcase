@@ -22,7 +22,6 @@ const translations = {
     'nav.services': 'خدماتنا',
     'nav.process': 'عملية التصميم',
     'nav.about': 'عن الاستوديو',
-    'nav.testimonials': 'آراء العملاء',
     'nav.contact': 'تواصل معنا',
     
     // Hero Section
@@ -69,9 +68,7 @@ const translations = {
     'about.quote': 'نؤمن أن كل مساحة تحكي قصة.',
     'about.image.alt': 'تصميم استوديو روزا',
     
-    // Testimonials
-    'testimonials.title': 'آراء عملائنا',
-    'testimonials.subtitle': 'ما يقوله عملاؤنا عن تجربتهم معنا',
+    
     
     // Contact
     'contact.title': 'ابدأ رحلة التصميم معنا',
@@ -127,7 +124,6 @@ const translations = {
     'nav.services': 'Services',
     'nav.process': 'Process',
     'nav.about': 'About',
-    'nav.testimonials': 'Testimonials',
     'nav.contact': 'Contact',
     
     // Hero Section
@@ -174,9 +170,7 @@ const translations = {
     'about.quote': 'We believe every space tells a story.',
     'about.image.alt': 'Roza Studio Design',
     
-    // Testimonials
-    'testimonials.title': 'Client Testimonials',
-    'testimonials.subtitle': 'What our clients say about their experience with us',
+    
     
     // Contact
     'contact.title': 'Start Your Design Journey With Us',
