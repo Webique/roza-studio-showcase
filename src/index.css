@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+/* Typography: Curated fonts for Arabic and English */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -129,12 +130,23 @@
   }
   
   /* Typography */
+  /* English display font (serif-ish luxury feel) */
   .font-playfair {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
   }
   
+  /* English UI font */
   .font-inter {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Manrope', sans-serif;
+  }
+
+  /* Arabic fonts for headings and body when dir=rtl */
+  [dir="rtl"] .font-playfair {
+    font-family: 'Cairo', 'Tajawal', system-ui, sans-serif;
+  }
+
+  [dir="rtl"] .font-inter {
+    font-family: 'Tajawal', 'Cairo', system-ui, sans-serif;
   }
   
   /* RTL Support */

@@ -69,10 +69,10 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
-			fontFamily: {
-				'playfair': ['Playfair Display', 'serif'],
-				'inter': ['Inter', 'sans-serif'],
-			},
+            fontFamily: {
+                'playfair': ['Cormorant Garamond', 'serif'],
+                'inter': ['Manrope', 'sans-serif'],
+            },
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-subtle': 'var(--gradient-subtle)',
