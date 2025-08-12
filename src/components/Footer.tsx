@@ -40,9 +40,7 @@ const Footer = () => {
               {t('footer.tagline')}
             </p>
             
-            <p className="text-ivory/70 leading-relaxed max-w-md">
-              {t('footer.description')}
-            </p>
+            {/* Removed extended description as requested */}
           </div>
 
           {/* Quick Links */}

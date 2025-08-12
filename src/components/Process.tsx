@@ -65,14 +65,12 @@ const Process = () => {
                       : isRTL ? 'lg:text-right lg:pl-16 lg:col-start-2' : 'lg:text-left lg:pr-16 lg:col-start-2'
                   }`}
                 >
-                  {/* Timeline Dot */}
+                  {/* Timeline Dot (number removed) */}
                   <div className={`hidden lg:block absolute top-8 ${
                     isEven 
                       ? isRTL ? '-left-8' : '-right-8' 
                       : isRTL ? '-right-8' : '-left-8'
-                  } w-16 h-16 bg-white rounded-full border-4 border-sage flex items-center justify-center shadow-soft`}>
-                    <span className="font-playfair font-bold text-cocoa">{step.number}</span>
-                  </div>
+                  } w-4 h-4 bg-sage rounded-full border-4 border-white shadow-soft`}></div>
 
                   {/* Content Card */}
                   <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-soft hover:shadow-elegant transition-all duration-500 group hover:-translate-y-2">
@@ -80,7 +78,6 @@ const Process = () => {
                       <div className="w-14 h-14 bg-gradient-to-br from-sage to-cocoa rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                         <IconComponent size={28} className="text-white" />
                       </div>
-                      <span className="font-playfair text-4xl font-bold text-sage/20">{step.number}</span>
                     </div>
 
                     <h3 className="font-playfair text-2xl font-semibold text-cocoa mb-4">

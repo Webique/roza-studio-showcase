@@ -23,7 +23,8 @@ const Navbar = () => {
 
   const navItems = [
     { key: 'nav.home', href: '#home' },
-    { key: 'nav.portfolio', href: '#portfolio' },
+    { key: 'nav.gallery', href: '#portfolio' },
+    { key: 'nav.portfolio', href: '#work' },
     { key: 'nav.services', href: '#services' },
     { key: 'nav.process', href: '#process' },
     { key: 'nav.about', href: '#about' },
@@ -35,9 +36,9 @@ const Navbar = () => {
       isScrolled ? 'glass-effect shadow-soft' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="grid grid-cols-3 items-center h-20">
           {/* Logo */}
-          <div className={`flex items-center ${isRTL ? 'order-3' : 'order-1'}`}>
+          <div className="flex items-center col-start-1 justify-self-start">
             <img 
               src={rozaLogo} 
               alt={t('brand.name')} 
@@ -46,12 +47,12 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className={`hidden lg:flex items-center space-x-8 ${isRTL ? 'space-x-reverse order-1' : 'order-2'}`}>
+          <div className={`hidden lg:flex items-center col-start-2 justify-center gap-8 flex-nowrap`}>
             {navItems.map((item) => (
               <a
                 key={item.key}
                 href={item.href}
-                className="text-cocoa hover:text-sage transition-colors duration-300 font-medium"
+                className="text-cocoa hover:text-sage transition-colors duration-300 font-medium whitespace-nowrap px-2"
               >
                 {t(item.key)}
               </a>
@@ -59,10 +60,10 @@ const Navbar = () => {
           </div>
 
           {/* Language Toggle & Mobile Menu */}
-          <div className={`flex items-center space-x-4 ${isRTL ? 'space-x-reverse order-2' : 'order-3'}`}>
+          <div className="flex items-center space-x-4 col-start-3 justify-self-end justify-end">
             <button
               onClick={toggleLanguage}
-              className={`flex items-center ${isRTL ? 'space-x-reverse' : ''} space-x-2 text-cocoa hover:text-sage transition-colors duration-300`}
+              className="flex items-center space-x-2 text-cocoa hover:text-sage transition-colors duration-300"
               aria-label={language === 'ar' ? t('lang.en') : t('lang.ar')}
               title={language === 'ar' ? t('lang.en') : t('lang.ar')}
             >

@@ -18,6 +18,7 @@ const translations = {
     'lang.short.en': 'EN',
     // Navigation
     'nav.home': 'الرئيسية',
+    'nav.gallery': 'المعرض',
     'nav.portfolio': 'أعمالنا',
     'nav.services': 'خدماتنا',
     'nav.process': 'عملية التصميم',
@@ -63,8 +64,8 @@ const translations = {
     'process.execution.desc': 'ندير عملية التنفيذ حتى التسليم النهائي',
     
     // About
-    'about.title': 'عن استوديو روزا',
-    'about.description': 'نؤمن أن كل مساحة تحكي قصة. في استوديو روزا، نحن متخصصون في إنشاء بيئات داخلية فاخرة تمزج بين الجمال الكلاسيكي والراحة العصرية. فلسفتنا تقوم على أن التصميم الجيد يجب أن يعكس شخصية ساكنيه ويخلق تجربة حسية لا تُنسى.',
+    'about.title': 'عن روزا استوديو',
+    'about.description': 'استوديو روزا للتصميم المعماري و الداخلي هو وجهتك لابتكار مساحات استثنائية تمزج بين الفخامة والحيوية بأسلوب عصري مبتكر. نحن نؤمن أن كل مساحة تحكي قصة، لذلك نصمم بعناية لتجسيد شخصيتك وذوقك الرفيع من خلال تفاصيل أنيقة وألوان نابضة بالحياة. من الفكرة إلى التنفيذ، نخلق بيئات راقية ومريحة تحمل بصمة فنية خاصة تترك انطباعًا لا يُنسى.',
     'about.quote': 'نؤمن أن كل مساحة تحكي قصة.',
     'about.image.alt': 'تصميم استوديو روزا',
     
@@ -75,7 +76,7 @@ const translations = {
     'contact.subtitle': 'دعنا نحول مساحتك إلى تحفة فنية تعكس ذوقك الراقي',
     'contact.cta': 'تواصل معنا عبر واتساب',
     'contact.info.title': 'معلومات التواصل',
-    'contact.whatsapp.description': 'تواصل معنا مباشرة على واتساب للحصول على استشارة فورية ومجانية',
+      'contact.whatsapp.description': 'تواصل معنا مباشرة على واتساب للحصول على استشارة فورية',
     'contact.form.quickMessageTitle': 'أرسل رسالة سريعة',
     'contact.form.name': 'الاسم',
     'contact.form.phone': 'رقم الهاتف',
@@ -97,9 +98,14 @@ const translations = {
     'footer.description': 'نحن متخصصون في إنشاء بيئات داخلية فاخرة تمزج بين الجمال الكلاسيكي والراحة العصرية.',
     'footer.madeWithLove': 'صُنع بحب في المملكة العربية السعودية',
     
-    // Portfolio
-    'portfolio.title': 'معرض أعمالنا',
-    'portfolio.subtitle': 'استكشف مجموعة من مشاريعنا المميزة',
+    // Gallery
+    'gallery.title': 'المعرض',
+    'gallery.subtitle': 'مجموعة مختارة من الصور والتفاصيل',
+
+    // Portfolio (Coming Soon)
+    'portfolio.title': 'أعمالنا',
+    'portfolio.subtitle': 'مشاريع مختارة قريبًا',
+    'portfolio.comingSoon': 'قريبًا — نعمل على عرض مشاريعنا المختارة',
     'portfolio.filter.all': 'جميع المشاريع',
     'portfolio.filter.residential': 'سكني',
     'portfolio.filter.commercial': 'تجاري',
@@ -120,6 +126,7 @@ const translations = {
     'lang.short.en': 'EN',
     // Navigation
     'nav.home': 'Home',
+    'nav.gallery': 'Gallery',
     'nav.portfolio': 'Portfolio',
     'nav.services': 'Services',
     'nav.process': 'Process',
@@ -166,7 +173,7 @@ const translations = {
     
     // About
     'about.title': 'About Roza Studio',
-    'about.description': 'We believe every space tells a story. At Roza Studio, we specialize in creating luxurious interior environments that blend classical beauty with modern comfort. Our philosophy is that good design should reflect the personality of its inhabitants and create an unforgettable sensory experience.',
+    'about.description': 'Roza Studio for architecture and interior design is your destination for crafting exceptional spaces that blend luxury with vitality through a fresh, modern vision. We believe every space tells a story, so we design with care to reflect your personality and refined taste through elegant details and vibrant colors. From concept to execution, we create refined, comfortable environments with a distinctive artistic signature that leaves a lasting impression.',
     'about.quote': 'We believe every space tells a story.',
     'about.image.alt': 'Roza Studio Design',
     
@@ -177,7 +184,7 @@ const translations = {
     'contact.subtitle': 'Let us transform your space into an artistic masterpiece that reflects your refined taste',
     'contact.cta': 'Contact us via WhatsApp',
     'contact.info.title': 'Contact Information',
-    'contact.whatsapp.description': 'Contact us directly on WhatsApp for instant and free consultation',
+      'contact.whatsapp.description': 'Contact us directly on WhatsApp for instant consultation',
     'contact.form.quickMessageTitle': 'Send a Quick Message',
     'contact.form.name': 'Name',
     'contact.form.phone': 'Phone Number',
@@ -199,9 +206,14 @@ const translations = {
     'footer.description': 'We specialize in creating luxurious interior environments that blend classical beauty with modern comfort.',
     'footer.madeWithLove': 'Made with love in Saudi Arabia',
     
-    // Portfolio
+    // Gallery
+    'gallery.title': 'Gallery',
+    'gallery.subtitle': 'A curated selection of images and details',
+
+    // Portfolio (Coming Soon)
     'portfolio.title': 'Our Portfolio',
-    'portfolio.subtitle': 'Explore a collection of our distinguished projects',
+    'portfolio.subtitle': 'Selected projects coming soon',
+    'portfolio.comingSoon': 'Coming soon — we are preparing a selection of our projects',
     'portfolio.filter.all': 'All Projects',
     'portfolio.filter.residential': 'Residential',
     'portfolio.filter.commercial': 'Commercial',
