@@ -191,33 +191,33 @@ const Services = () => {
 
           {/* Project 3 - Full Width with Overlay */}
           <div className="relative">
-            <div className="aspect-[21/9] rounded-3xl overflow-hidden shadow-elegant">
+            <div className="aspect-[4/3] md:aspect-[16/9] lg:aspect-[21/9] rounded-3xl overflow-hidden shadow-elegant">
               <img
                 src={serviceImg3}
                 alt="Premium Interior Solutions"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-black/80 via-black/40 to-black/20 md:from-black/60 md:via-black/20 md:to-transparent"></div>
             </div>
             
             {/* Overlay Content */}
-            <div className="absolute inset-0 flex items-center">
-              <div className="container mx-auto px-4">
-                <div className="max-w-2xl space-y-6 text-white">
+            <div className="absolute inset-0 flex items-center justify-center md:justify-start">
+              <div className="container mx-auto px-6 md:px-4">
+                <div className="max-w-2xl space-y-4 md:space-y-6 text-white text-center md:text-left">
                   <div className="inline-block">
-                    <span className="text-white/90 text-sm font-medium tracking-wide uppercase border border-white/30 rounded-full px-4 py-2">
+                    <span className="text-white/90 text-xs md:text-sm font-medium tracking-wide uppercase border border-white/30 rounded-full px-3 py-1 md:px-4 md:py-2">
                       {t('services.consultation')}
                     </span>
                   </div>
-                  <h3 className="font-playfair text-4xl md:text-5xl font-bold leading-tight">
+                  <h3 className="font-playfair text-2xl md:text-4xl lg:text-5xl font-bold leading-tight">
                     {t('services.project3.title')}
                   </h3>
-                  <p className="text-white/90 text-xl leading-relaxed">
+                  <p className="text-white/90 text-base md:text-xl leading-relaxed">
                     {t('services.project3.description')}
                   </p>
                   <button
                     onClick={handleWhatsAppClick}
-                    className="group bg-white text-cocoa hover:bg-white/90 transition-colors duration-300 px-8 py-4 rounded-xl font-medium flex items-center space-x-3"
+                    className="group bg-white text-cocoa hover:bg-white/90 transition-colors duration-300 px-6 py-3 md:px-8 md:py-4 rounded-xl font-medium flex items-center justify-center space-x-3 w-full md:w-auto"
                   >
                     <span>{t('services.cta')}</span>
                     <ArrowIcon size={18} className="group-hover:translate-x-2 transition-transform duration-300" />
