@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Globe } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import rozaLogo from '@/assets/roza-logo.png';
+import rozaLogo from '@/assets/Screenshot 2025-08-12 at 03.43.02.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,11 +23,9 @@ const Navbar = () => {
 
   const navItems = [
     { key: 'nav.home', href: '#home' },
-    { key: 'nav.gallery', href: '#portfolio' },
-    { key: 'nav.portfolio', href: '#work' },
+    { key: 'nav.about', href: '#about' },
     { key: 'nav.services', href: '#services' },
     { key: 'nav.process', href: '#process' },
-    { key: 'nav.about', href: '#about' },
     { key: 'nav.contact', href: '#contact' },
   ];
 

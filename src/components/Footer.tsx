@@ -1,7 +1,7 @@
 import React from 'react';
 import { Globe, MessageCircle, Instagram, Twitter } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import rozaLogo from '@/assets/roza-logo.png';
+import rozaLogo from '@/assets/Screenshot 2025-08-12 at 03.43.02.png';
 
 const Footer = () => {
   const { language, setLanguage, t, isRTL } = useLanguage();
