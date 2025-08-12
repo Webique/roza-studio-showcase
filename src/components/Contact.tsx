@@ -80,11 +80,7 @@ const Contact = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-white/20">
-              <div className="text-center">
-                <div className="font-playfair text-3xl font-bold text-white mb-2">150+</div>
-                <div className="text-white/70 text-sm">{t('contact.stats.happyClients')}</div>
-              </div>
+            <div className="grid grid-cols-2 gap-6 pt-8 border-t border-white/20">
               <div className="text-center">
                 <div className="font-playfair text-3xl font-bold text-white mb-2">5+</div>
                 <div className="text-white/70 text-sm">{t('contact.stats.yearsExperience')}</div>

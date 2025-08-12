@@ -83,8 +83,8 @@ const Services = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-sage to-cocoa rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <IconComponent size={32} className="text-white" />
+                  <div className="w-16 h-16 bg-gradient-to-br from-sage/60 to-cocoa/60 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <IconComponent size={32} className="text-white/90" />
                   </div>
                   
                   <h3 className="font-playfair text-2xl font-semibold text-cocoa mb-4">
