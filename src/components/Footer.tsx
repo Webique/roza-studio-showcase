@@ -71,10 +71,10 @@ const Footer = () => {
             <div className="space-y-4 mb-6">
               <button
                 onClick={handleWhatsAppClick}
-                className="flex items-center space-x-3 text-ivory/80 hover:text-green-400 transition-colors duration-300 group"
+                className={`flex items-center text-ivory/80 hover:text-green-400 transition-colors duration-300 group ${isRTL ? 'space-x-reverse space-x-3' : 'space-x-3'}`}
               >
                 <MessageCircle size={20} className="group-hover:scale-110 transition-transform duration-300" />
-                <span>+966 53 660 1777</span>
+                <span dir="ltr">+966 53 660 1777</span>
               </button>
             </div>
 
