@@ -27,12 +27,12 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Logo & Tagline */}
-          <div className={`md:col-span-2 ${isRTL ? 'text-right' : 'text-left'}`}>
+          <div className={`md:col-span-2 text-center md:${isRTL ? 'text-right' : 'text-left'}`}>
             <div className="mb-6">
               <img 
                 src={rozaLogo} 
                 alt={t('brand.name')} 
-                className="h-40 md:h-52 lg:h-64 w-auto object-contain"
+                className="h-80 md:h-72 lg:h-96 w-auto object-contain mx-auto md:mx-0"
               />
             </div>
             
