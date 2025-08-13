@@ -98,7 +98,7 @@ const Services = () => {
 
                 <button
                   onClick={handleWhatsAppClick}
-                  className="flex items-center space-x-2 text-cocoa hover:text-sage transition-colors duration-300 font-medium group"
+                  className="flex items-center justify-center space-x-2 text-cocoa hover:text-sage transition-colors duration-300 font-medium group mx-auto"
                 >
                   <span>{t('services.cta')}</span>
                   <ArrowIcon size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
@@ -140,7 +140,7 @@ const Services = () => {
               </p>
               <button
                 onClick={handleWhatsAppClick}
-                className="group flex items-center space-x-3 text-cocoa hover:text-sage transition-colors duration-300"
+                className="group flex items-center justify-center space-x-3 text-cocoa hover:text-sage transition-colors duration-300 mx-auto"
               >
                 <span className="font-medium">{t('services.cta')}</span>
                 <ArrowIcon size={18} className="group-hover:translate-x-2 transition-transform duration-300" />
