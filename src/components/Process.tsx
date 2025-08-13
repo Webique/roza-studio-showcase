@@ -142,58 +142,32 @@ const Process = () => {
                 <div className={`absolute -top-4 w-16 h-16 bg-white rounded-2xl shadow-elegant flex items-center justify-center ${isRTL ? '-right-4' : '-left-4'}`}>
                   <span className="font-playfair text-2xl font-bold text-cocoa">01</span>
                 </div>
-                
-                {/* Geometric Decoration */}
-                <div className={`absolute -bottom-6 w-24 h-24 border-2 border-sage/30 rounded-2xl transform rotate-12 ${isRTL ? '-left-6' : '-right-6'}`}></div>
               </div>
             </div>
           </div>
 
-          {/* Concept Development */}
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
-            <div className="lg:col-span-2 lg:order-1 relative">
-              <div className="relative group">
-                <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-elegant">
-                  <img
-                    src={processImg3}
-                    alt="Concept Development"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                </div>
-                
-                {/* Floating Icon Badge */}
-                <div className={`absolute -top-4 w-16 h-16 bg-gradient-to-br from-sage to-cocoa rounded-2xl shadow-elegant flex items-center justify-center ${isRTL ? '-right-4' : '-left-4'}`}>
-                  <Lightbulb size={28} className="text-white" />
-                </div>
-                
-                {/* Creative Elements */}
-                <div className={`absolute -bottom-4 w-20 h-20 border-2 border-cocoa/30 rounded-full ${isRTL ? '-left-4' : '-right-4'}`}></div>
-                <div className={`absolute -bottom-2 w-12 h-12 bg-cocoa/20 rounded-full ${isRTL ? '-left-2' : '-right-2'}`}></div>
+          {/* Concept Development (Text Only) */}
+          <div className="max-w-4xl mx-auto text-center space-y-8 mb-32">
+            <div className={`flex items-center justify-center ${isRTL ? 'space-x-reverse space-x-4' : 'space-x-4'}`}>
+              <div className="w-1 h-16 bg-gradient-to-b from-sage to-cocoa rounded-full"></div>
+              <div>
+                <span className="text-sage/70 text-sm font-medium tracking-wider uppercase">Step 02</span>
+                <h3 className="font-playfair text-3xl md:text-4xl font-bold text-cocoa">{t('process.concept')}</h3>
               </div>
             </div>
             
-            <div className="lg:col-span-3 lg:order-2 space-y-8">
-              <div className={`flex items-center ${isRTL ? 'space-x-reverse space-x-4' : 'space-x-4'}`}>
-                <div className="w-1 h-16 bg-gradient-to-b from-sage to-cocoa rounded-full"></div>
-                <div>
-                  <span className="text-sage/70 text-sm font-medium tracking-wider uppercase">Step 02</span>
-                  <h3 className="font-playfair text-3xl md:text-4xl font-bold text-cocoa">{t('process.concept')}</h3>
-                </div>
+            <p className="text-sage text-lg leading-relaxed">
+              {t('process.concept.detailed')}
+            </p>
+            
+            <div className="grid grid-cols-2 gap-6 max-w-2xl mx-auto">
+              <div className="bg-cocoa/5 border border-cocoa/20 rounded-xl p-4">
+                <div className="font-playfair text-2xl font-bold text-cocoa mb-2">3-5</div>
+                <div className="text-sage text-sm">{t('process.stats.designOptions')}</div>
               </div>
-              
-              <p className="text-sage text-lg leading-relaxed">
-                {t('process.concept.detailed')}
-              </p>
-              
-              <div className="grid grid-cols-2 gap-6">
-                <div className="bg-cocoa/5 border border-cocoa/20 rounded-xl p-4">
-                  <div className="font-playfair text-2xl font-bold text-cocoa mb-2">3-5</div>
-                  <div className="text-sage text-sm">{t('process.stats.designOptions')}</div>
-                </div>
-                <div className="bg-cocoa/5 border border-cocoa/20 rounded-xl p-4">
-                  <div className="font-playfair text-2xl font-bold text-cocoa mb-2">3D</div>
-                  <div className="text-sage text-sm">{t('process.stats.visualizations')}</div>
-                </div>
+              <div className="bg-cocoa/5 border border-cocoa/20 rounded-xl p-4">
+                <div className="font-playfair text-2xl font-bold text-cocoa mb-2">3D</div>
+                <div className="text-sage text-sm">{t('process.stats.visualizations')}</div>
               </div>
             </div>
           </div>

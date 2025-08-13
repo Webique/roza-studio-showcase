@@ -148,45 +148,26 @@ const Services = () => {
             </div>
           </div>
 
-          {/* Project 2 - Text Left, Image Right */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-6 lg:order-1">
-              <div className="inline-block">
-                <span className="text-sage text-sm font-medium tracking-wide uppercase border border-sage/30 rounded-full px-4 py-2">
-                  {t('services.architecture')}
-                </span>
-              </div>
-              <h3 className="font-playfair text-3xl md:text-4xl font-bold text-cocoa leading-tight">
-                {t('services.project2.title')}
-              </h3>
-              <p className="text-sage text-lg leading-relaxed">
-                {t('services.project2.description')}
-              </p>
-              <button
-                onClick={handleWhatsAppClick}
-                className="group flex items-center space-x-3 text-cocoa hover:text-sage transition-colors duration-300"
-              >
-                <span className="font-medium">{t('services.cta')}</span>
-                <ArrowIcon size={18} className="group-hover:translate-x-2 transition-transform duration-300" />
-              </button>
+          {/* Project 2 - Architectural Excellence (Text Only) */}
+          <div className="max-w-4xl mx-auto text-center space-y-6 mb-32">
+            <div className="inline-block">
+              <span className="text-sage text-sm font-medium tracking-wide uppercase border border-sage/30 rounded-full px-4 py-2">
+                {t('services.architecture')}
+              </span>
             </div>
-            
-            <div className="relative group lg:order-2">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-elegant">
-                <img
-                  src={serviceImg2}
-                  alt="Modern Architecture"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-              {/* Floating Elements */}
-              <div className="absolute -bottom-6 -left-6 bg-gradient-to-br from-sage to-cocoa rounded-2xl p-4 shadow-elegant">
-                <div className="text-white text-center">
-                  <div className="font-playfair text-2xl font-bold">150+</div>
-                  <div className="text-sm opacity-90">{t('services.stats.projects')}</div>
-                </div>
-              </div>
-            </div>
+            <h3 className="font-playfair text-3xl md:text-4xl font-bold text-cocoa leading-tight">
+              {t('services.project2.title')}
+            </h3>
+            <p className="text-sage text-lg leading-relaxed">
+              {t('services.project2.description')}
+            </p>
+            <button
+              onClick={handleWhatsAppClick}
+              className="group flex items-center space-x-3 text-cocoa hover:text-sage transition-colors duration-300 mx-auto"
+            >
+              <span className="font-medium">{t('services.cta')}</span>
+              <ArrowIcon size={18} className="group-hover:translate-x-2 transition-transform duration-300" />
+            </button>
           </div>
 
           {/* Project 3 - Full Width with Overlay */}

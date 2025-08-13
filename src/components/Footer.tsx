@@ -1,7 +1,7 @@
 import React from 'react';
 import { Globe, MessageCircle, Instagram, Twitter } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import rozaLogo from '@/assets/Screenshot 2025-08-12 at 03.43.02.png';
+import rozaLogo from '@/assets/LOGO-١٣.png';
 
 const Footer = () => {
   const { language, setLanguage, t, isRTL } = useLanguage();
@@ -32,7 +32,7 @@ const Footer = () => {
               <img 
                 src={rozaLogo} 
                 alt={t('brand.name')} 
-                className="h-16 w-auto object-contain"
+                className="h-40 md:h-52 lg:h-64 w-auto object-contain"
               />
             </div>
             

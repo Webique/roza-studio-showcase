@@ -28,10 +28,7 @@ const Contact = () => {
         ></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30"></div>
         
-        {/* Geometric Overlays */}
-        <div className="absolute top-20 left-20 w-32 h-32 bg-white/5 rounded-full blur-xl"></div>
-        <div className="absolute bottom-32 right-32 w-48 h-48 bg-white/5 rounded-full blur-2xl"></div>
-        <div className="absolute top-1/2 left-10 w-2 h-32 bg-white/20 rounded-full transform -rotate-12"></div>
+
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
@@ -66,21 +63,21 @@ const Contact = () => {
             <div className="space-y-4">
               <button
                 onClick={handleDirectWhatsApp}
-                className="group w-full bg-white text-cocoa hover:bg-white/95 transition-all duration-300 px-8 py-5 rounded-2xl font-semibold flex items-center justify-center space-x-4 shadow-elegant"
+                className={`group w-full bg-white text-cocoa hover:bg-white/95 transition-all duration-300 px-8 py-5 rounded-2xl font-semibold flex items-center justify-center ${isRTL ? 'space-x-reverse space-x-4' : 'space-x-4'} shadow-elegant`}
               >
                 <MessageCircle size={24} />
                 <span className="text-lg">{t('contact.cta')}</span>
                 <ArrowIcon size={20} className="group-hover:translate-x-2 transition-transform duration-300" />
               </button>
               
-              <div className="flex items-center justify-center space-x-3 text-white/80">
+              <div className={`flex items-center justify-center text-white/80 ${isRTL ? 'space-x-reverse space-x-3' : 'space-x-3'}`}>
                 <MessageCircle size={18} className="text-green-400" />
-                <span className="tracking-wide font-medium">+966 53 660 1777</span>
+                <span className="tracking-wide font-medium" dir="ltr">+966 53 660 1777</span>
               </div>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 gap-6 pt-8 border-t border-white/20">
+            <div className="grid grid-cols-2 gap-6 pt-8">
               <div className="text-center">
                 <div className="font-playfair text-3xl font-bold text-white mb-2">5+</div>
                 <div className="text-white/70 text-sm">{t('contact.stats.yearsExperience')}</div>
@@ -109,8 +106,8 @@ const Contact = () => {
                   </p>
                 </div>
 
-                <div className="flex items-center space-x-4 pt-4 border-t border-white/20">
-                  <div className="flex -space-x-2">
+                <div className={`flex items-center pt-4 ${isRTL ? 'space-x-reverse space-x-4' : 'space-x-4'}`}>
+                  <div className={`flex ${isRTL ? 'space-x-reverse -space-x-2' : '-space-x-2'}`}>
                     <div className="w-8 h-8 bg-sage rounded-full border-2 border-white"></div>
                     <div className="w-8 h-8 bg-cocoa rounded-full border-2 border-white"></div>
                     <div className="w-8 h-8 bg-white/20 rounded-full border-2 border-white flex items-center justify-center">
@@ -122,9 +119,7 @@ const Contact = () => {
               </div>
             </div>
             
-            {/* Floating Elements */}
-            <div className="absolute -top-4 -right-4 w-8 h-8 bg-white/20 rounded-full"></div>
-            <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-white/10 rounded-full"></div>
+
           </div>
         </div>
       </div>
