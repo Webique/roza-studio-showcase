@@ -120,14 +120,10 @@ const Services = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
-              {/* Floating Badge */}
-              <div className="absolute -top-6 -right-6 bg-white rounded-2xl px-6 py-3 shadow-elegant">
-                <span className="font-playfair text-cocoa font-semibold">2024</span>
-              </div>
             </div>
             
-            <div className="space-y-6">
-              <div className="inline-block">
+            <div className="space-y-6 text-center lg:text-left">
+              <div className="inline-block mx-auto lg:mx-0">
                 <span className="text-sage text-sm font-medium tracking-wide uppercase border border-sage/30 rounded-full px-4 py-2">
                   {t('services.interior')}
                 </span>
@@ -140,7 +136,7 @@ const Services = () => {
               </p>
               <button
                 onClick={handleWhatsAppClick}
-                className="group flex items-center justify-center space-x-3 text-cocoa hover:text-sage transition-colors duration-300 mx-auto"
+                className="group flex items-center justify-center space-x-3 text-cocoa hover:text-sage transition-colors duration-300 mx-auto lg:mx-0"
               >
                 <span className="font-medium">{t('services.cta')}</span>
                 <ArrowIcon size={18} className="group-hover:translate-x-2 transition-transform duration-300" />
